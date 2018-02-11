@@ -58,13 +58,12 @@ public class EchoApplication {
             case "STOP":
                 return whatDayBot.handle(new StopCommand(event.getSource().getSenderId())).getText();
             default:
-                logger.info("Not supported command: {}", event.getMessage().getText());
-                return "Not supported command";
+                return "";
         }
     }
 
     @EventMapping
     public void handleDefaultMessageEvent(Event event) {
-        System.out.println("event: " + event);
+        logger.info("event: {}", event);
     }
 }

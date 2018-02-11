@@ -1,4 +1,4 @@
-package com.example.bot.spring.echo;
+package com.example.bot.spring.echo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
